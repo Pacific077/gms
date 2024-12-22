@@ -1,0 +1,298 @@
+body {
+  padding: 0;
+  background-color: black;
+  margin: 0;
+}
+.MainNav {
+  height: 9vh;
+  padding-left: 80px;
+  padding-right: 100px;
+  background-color: rgba(114, 151, 197, 1);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.rightcontents {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  font-weight: 450;
+}
+.leftcontents {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 40%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.rightmenuitems {
+  width: 75%;
+}
+.rightmenuitems .items {
+  border-bottom: 1px solid transparent;
+}
+.rightmenuitems .items:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid black;
+}
+.leftmeuitems {
+  width: 80%;
+}
+.leftmeuitems,
+.rightmenuitems {
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftmeuitems .items {
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+}
+.Goldmaclogo {
+  font-size: large;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+.Goldmaclogo {
+  line-height: 14px;
+}
+.leftmeuitems .items:hover {
+  cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 3px solid black;
+}
+.loginndsrch {
+  display: flex;
+  gap: 2vh;
+  align-items: center;
+}
+.login {
+  height: 6vh;
+  width: 15vh;
+  background-color: transparent;
+  border: 1px solid black;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+}
+.homePage {
+  height: 84vh;
+}
+.login:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.login {
+  transition: background-color 0.3s ease;
+}
+.seacrhicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  height: 5vh;
+  width: 5vh;
+
+  font-weight: 200;
+}
+.seacrhicon:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.seacrhicon {
+  transition: background-color 0.3s ease;
+}
+
+.it-1 {
+  position: relative;
+}
+.it-1-hover,
+.it-2-hover,
+.it-3-hover,
+.it-4-hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.it-1-hover {
+  height: 60%;
+}
+.it-2-hover {
+  height: 80%;
+}
+.it-3-hover {
+  height: 90%;
+}
+.it-4-hover {
+  height: 80%;
+}
+.restofthebody {
+  color: white;
+}
+@media only screen and (max-width: 1310px) {
+  .leftcontents {
+    font-size: 14px;
+  }
+  .rightcontents {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1263px) {
+  .rightcontents {
+    width: 53%;
+  }
+  .MainNav {
+    padding-left: 50px;
+    padding-right: 60px;
+  }
+}
+.respnavbox {
+  display: none;
+  box-sizing: border-box;
+  padding-left: 4vh;
+}
+.Goldmaclogoresp {
+  font-size: large;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  /* display: none; */
+}
+.hamburgerAndBranding {
+  box-sizing: border-box;
+  /* padding-left: ; */
+  display: flex;
+  gap: 3vh;
+}
+.hamburger {
+  height: 5vh;
+  width: 5vh;
+  /* border: 4px solid black; */
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.lineham1, .lineham2, .lineham3 {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger.open .lineham1 {
+    transform: rotate(45deg);
+    position: relative;
+    top:8px;
+  }
+  
+  .hamburger.open .lineham2 {
+    opacity: 0;
+  }
+  
+  .hamburger.open .lineham3 {
+    transform: rotate(-45deg);
+    position: relative;
+    top :-8px;
+  }
+.responsiveNavDrropdown{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    
+}
+.upperhalfrespNav,.LowerhalfrespNav{
+    padding: 3vh;
+    height: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.upperhalfrespNav{
+    border-bottom: 1px solid gray;
+    
+}
+.respclientLoginbtn{
+    border: 1px solid black;
+    width: 95%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+}
+.uperHalfitem,.LowerHalfitem{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 1160px) {
+  .Goldmaclogo {
+    font-size: 15px;
+  }
+  .leftcontents {
+    width: 43%;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  .MainNav {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .leftcontents {
+    display: none;
+  }
+  .rightcontents {
+    display: none;
+  }
+  .respnavbox {
+    display: flex;
+    align-items: center;
+  }
+  .it-1-hover,
+  .it-2-hover,
+  .it-3-hover,
+  .it-4-hover {
+    display: none;
+  }
+}
